@@ -25,7 +25,7 @@
             margin: auto;
         }
         h1, h2 {
-            color: #4CAF50; /* Change this to a color of your choice if you want */
+            color: #4CAF50;
         }
         section {
             margin-bottom: 2em;
@@ -40,7 +40,7 @@
             margin: 0;
         }
         a {
-            color: #4CAF50; /* Change this to a color of your choice if you want */
+            color: #4CAF50;
             text-decoration: none;
         }
         a:hover {
@@ -55,16 +55,24 @@
             width: 100%;
             bottom: 0;
         }
-        .badge {
-            margin: 1em 0;
-            text-align: center;
+        .badge-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 2em 0;
+        }
+        .badge-container img {
+            max-width: 150px;
+            height: auto;
+        }
+        .badge-container .center-badge {
+            margin: 0 auto;
         }
     </style>
 </head>
 <body>
     <header>
         <h1>Marian John</h1>
-        <img src="https://tryhackme-badges.s3.amazonaws.com/mjcube.png" alt="TryHackMe">
         <p>Security Engineer | Cybersecurity Analyst</p>
     </header>
     <div class="container">
@@ -74,6 +82,12 @@
             <p>Phone: (240) 927-7590</p>
             <p>LinkedIn: <a href="https://www.linkedin.com/in/marianjohn" target="_blank">linkedin.com/in/marianjohn</a></p>
             <p>TryHackMe: <a href="https://tryhackme.com/p/mjcube" target="_blank">tryhackme.com</a></p>
+        </section>
+
+        <section class="badge-container">
+            <img src="1710206175828.jpg" alt="Left Image">
+            <img class="center-badge" src="https://tryhackme-badges.s3.amazonaws.com/mjcube.png" alt="TryHackMe Badge">
+            <img src="1722444860954.jpg" alt="Right Image">
         </section>
 
         <section class="experience">
@@ -95,12 +109,8 @@
             </ul>
         </section>
      </div>
-
-        <!-- Optionally, you can use the following section to add more content or leave it empty -->
-        <section class="thankyou">
-            <!-- Additional content can go here -->
-        </section>
-    
+    <section>
+    </section>
     <footer>
         <p>&copy; 2024 Marian John. All rights reserved.</p>
     </footer>
