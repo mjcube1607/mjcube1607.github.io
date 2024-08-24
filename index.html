@@ -6,7 +6,7 @@
     <title>Marian John's Portfolio</title>
     <style>
         body {
-            font-family: Courier, monospace;
+            font-family: 'Courier New', Courier, monospace;
             margin: 0;
             padding: 0;
             color: #fff;
@@ -16,32 +16,49 @@
         header {
             background-color: #333;
             color: #fff;
-            padding: 1em 0;
+            padding: 1.5em 0;
             text-align: center;
+            border-bottom: 2px solid #4CAF50;
         }
         nav {
             background-color: #222;
             padding: 1em;
             text-align: center;
+            border-bottom: 1px solid #4CAF50;
         }
         nav a {
             color: #4CAF50;
-            margin: 0 1em;
+            margin: 0 1.5em;
             text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
         }
         nav a:hover {
+            color: #fff;
             text-decoration: underline;
         }
         .container {
             padding: 2em;
             max-width: 900px;
             margin: auto;
+            background-color: #111;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
         }
         h1, h2 {
             color: #4CAF50;
+            margin-bottom: 0.5em;
         }
         section {
             margin-bottom: 2em;
+            padding: 1.5em;
+            background-color: #222;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        p {
+            font-size: 1.1em;
+            line-height: 1.8;
         }
         footer {
             background-color: #333;
@@ -50,6 +67,7 @@
             padding: 0.5em 0;
             margin-top: 2em;
             width: 100%;
+            border-top: 2px solid #4CAF50;
         }
     </style>
 </head>
@@ -60,11 +78,11 @@
     </header>
     
     <nav>
-	<a href="index.html">Home</a>
-    	<a href="experience.html">Experience</a>
-    	<a href="projects.html">Projects</a>
-    	<a href="certifications.html">Certifications</a>
-    	<a href="ctfs.html">CTFs Walkthrough</a>
+        <a href="index.html">Home</a>
+        <a href="experience.html">Experience</a>
+        <a href="projects.html">Projects</a>
+        <a href="certifications.html">Certifications</a>
+        <a href="ctfs.html">CTFs Walkthrough</a>
     </nav>
 
     <div class="container">
@@ -79,3 +97,4 @@
     </footer>
 </body>
 </html>
+
