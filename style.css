@@ -1,29 +1,29 @@
 body {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    color: #fff;
-    background-color: #121212; /* Dark grey background */
+    color: #333;
+    background-color: #fafafa; /* Light grey background */
     line-height: 1.6;
 }
 
 header {
-    background-color: #1e1e1e; /* Slightly lighter grey */
-    color: #fff;
+    background-color: #ffffff; /* White background */
+    color: #333;
     padding: 1.5em 0;
     text-align: center;
-    border-bottom: 2px solid #4CAF50;
+    border-bottom: 2px solid #007bff; /* Soft blue border */
 }
 
 nav {
-    background-color: #1e1e1e;
+    background-color: #ffffff; /* White background */
     padding: 1em;
     text-align: center;
-    border-bottom: 1px solid #4CAF50;
+    border-bottom: 1px solid #007bff; /* Soft blue border */
 }
 
 nav a {
-    color: #4CAF50;
+    color: #007bff; /* Soft blue text */
     margin: 0 1.5em;
     text-decoration: none;
     font-weight: bold;
@@ -31,7 +31,7 @@ nav a {
 }
 
 nav a:hover {
-    color: #fff;
+    color: #0056b3; /* Darker blue on hover */
     text-decoration: underline;
 }
 
@@ -39,13 +39,13 @@ nav a:hover {
     padding: 2em;
     max-width: 900px;
     margin: auto;
-    background-color: #1e1e1e; /* Same background as nav and header */
+    background-color: #ffffff; /* White background */
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Lighter shadow */
 }
 
 h1, h2 {
-    color: #4CAF50;
+    color: #007bff; /* Soft blue text */
 }
 
 section {
@@ -53,13 +53,13 @@ section {
 }
 
 footer {
-    background-color: #1e1e1e;
-    color: #fff;
+    background-color: #ffffff; /* White background */
+    color: #333;
     text-align: center;
     padding: 0.5em 0;
     margin-top: 2em;
     width: 100%;
-    border-top: 2px solid #4CAF50;
+    border-top: 2px solid #007bff; /* Soft blue border */
 }
 
 .badge-container {
@@ -73,20 +73,20 @@ footer {
 .badge {
     width: 120px;
     height: auto;
-    border: 2px solid #4CAF50;
+    border: 2px solid #007bff; /* Soft blue border */
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Lighter shadow */
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .badge:hover {
     transform: scale(1.1);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Slightly darker shadow */
 }
 
 .badge-text {
     text-align: center;
-    color: #4CAF50;
+    color: #007bff; /* Soft blue text */
     margin-bottom: 10px;
     font-size: 16px;
 }
@@ -94,4 +94,3 @@ footer {
 .project {
     margin-bottom: 2em;
 }
-
