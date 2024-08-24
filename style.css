@@ -1,32 +1,37 @@
 body {
-    font-family: Courier, monospace;
+    font-family: 'Courier New', Courier, monospace;
     margin: 0;
     padding: 0;
     color: #fff;
-    background-color: #000;
+    background-color: #121212; /* Dark grey background */
     line-height: 1.6;
 }
 
 header {
-    background-color: #333;
+    background-color: #1e1e1e; /* Slightly lighter grey */
     color: #fff;
-    padding: 1em 0;
+    padding: 1.5em 0;
     text-align: center;
+    border-bottom: 2px solid #4CAF50;
 }
 
 nav {
-    background-color: #222;
+    background-color: #1e1e1e;
     padding: 1em;
     text-align: center;
+    border-bottom: 1px solid #4CAF50;
 }
 
 nav a {
     color: #4CAF50;
-    margin: 0 1em;
+    margin: 0 1.5em;
     text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
 }
 
 nav a:hover {
+    color: #fff;
     text-decoration: underline;
 }
 
@@ -34,6 +39,9 @@ nav a:hover {
     padding: 2em;
     max-width: 900px;
     margin: auto;
+    background-color: #1e1e1e; /* Same background as nav and header */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 h1, h2 {
@@ -45,10 +53,45 @@ section {
 }
 
 footer {
-    background-color: #333;
+    background-color: #1e1e1e;
     color: #fff;
     text-align: center;
     padding: 0.5em 0;
     margin-top: 2em;
     width: 100%;
+    border-top: 2px solid #4CAF50;
 }
+
+.badge-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.badge {
+    width: 120px;
+    height: auto;
+    border: 2px solid #4CAF50;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.badge:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.badge-text {
+    text-align: center;
+    color: #4CAF50;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.project {
+    margin-bottom: 2em;
+}
+
