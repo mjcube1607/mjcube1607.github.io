@@ -6,9 +6,28 @@
     <title>Certifications - Marian John</title>
     <link rel="stylesheet" href="style.css">
     <style>
+        .badge-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px; /* Space between badges */
+            justify-content: center; /* Center badges horizontally */
+            padding: 20px; /* Space around the container */
+        }
         .badge {
-            width: 100px;  /* Adjust the size to your preference */
+            width: 100px; /* Adjust size of badges */
             height: auto;
+            border: 2px solid #4CAF50; /* Border color */
+            border-radius: 8px; /* Rounded corners */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+            transition: transform 0.3s, box-shadow 0.3s; /* Smooth hover effects */
+        }
+        .badge:hover {
+            transform: scale(1.05); /* Slightly enlarge badge on hover */
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
+        }
+        .badge-text {
+            text-align: center;
+            margin: 10px 0;
         }
     </style>
 </head>
@@ -29,12 +48,17 @@
     <div class="container">
         <section>
             <h2>Certifications</h2>
-            <ul>
-                <li><strong>CompTIA Security+:</strong> Issued Jul 2024 · Expires Jul 2027</li>
+            <div class="badge-container">
+                <div class="badge-text">
+                    <strong>CompTIA Security+:</strong> Issued Jul 2024 · Expires Jul 2027
+                </div>
                 <img src="1722444860954.jpg" class="badge" alt="CompTIA Security+ Badge">
-                <li><strong>eJPTv2:</strong> Issued Mar 2024 · Expires Mar 2027</li>
+                
+                <div class="badge-text">
+                    <strong>eJPTv2:</strong> Issued Mar 2024 · Expires Mar 2027
+                </div>
                 <img src="1710206175828.jpg" class="badge" alt="eJPTv2 Badge">
-            </ul>
+            </div>
         </section>
     </div>
 
@@ -43,3 +67,4 @@
     </footer>
 </body>
 </html>
+
