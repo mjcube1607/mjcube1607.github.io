@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Resume</title>
+    <title>Marian John's Portfolio</title>
     <style>
         body {
             font-family: Courier, monospace;
@@ -19,6 +19,19 @@
             padding: 1em 0;
             text-align: center;
         }
+        nav {
+            background-color: #222;
+            padding: 1em;
+            text-align: center;
+        }
+        nav a {
+            color: #4CAF50;
+            margin: 0 1em;
+            text-decoration: none;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
         .container {
             padding: 2em;
             max-width: 900px;
@@ -30,42 +43,13 @@
         section {
             margin-bottom: 2em;
         }
-        .contact-info, .education, .experience {
-            border: 1px solid #444;
-            padding: 1em;
-            border-radius: 5px;
-            background-color: #222;
-        }
-        .contact-info p, .education p, .experience p {
-            margin: 0;
-        }
-        a {
-            color: #4CAF50;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
         footer {
             background-color: #333;
             color: #fff;
             text-align: center;
-            padding: 0.5em 0; /* Reduced padding */
-            margin-top: 2em;  /* Add margin-top to create space above the footer */
+            padding: 0.5em 0;
+            margin-top: 2em;
             width: 100%;
-        }
-        .badge-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 0.5em; /* Reduced margin */
-        }
-        .badge-container img {
-            max-width: 100px; /* Reduced image size */
-            height: auto;
-        }
-        .badge-container .center-badge {
-            margin: 0 auto;
         }
     </style>
 </head>
@@ -75,43 +59,20 @@
         <p>Security Engineer | Cybersecurity Analyst</p>
     </header>
     
+    <nav>
+        <a href="experience.html">Experience</a>
+        <a href="projects.html">Projects</a>
+        <a href="certifications.html">Certifications</a>
+    </nav>
+
     <div class="container">
-        <section class="contact-info">
-            <h2>Contact Information</h2>
-            <p>Email: mjcube1999@gmail.com</p>
-            <p>Phone: (240) 927-7590</p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/marianjohn" target="_blank">linkedin.com/in/marianjohn</a></p>
-            <p>TryHackMe: <a href="https://tryhackme.com/p/mjcube" target="_blank">tryhackme.com</a></p>
+        <section>
+            <h2>Welcome to My Portfolio</h2>
+            <p>Explore my professional experience, projects, and certifications in the field of cybersecurity.</p>
         </section>
+    </div>
 
-        <section class="experience">
-            <h2>Experience</h2>
-            <h3>Cybersecurity Analyst @ TCS</h3>
-            <p><strong>May 2021 - August 2022</strong></p>
-            <ul>
-                <li>Conducted security assessments and penetration tests on web applications, identifying and mitigating vulnerabilities.</li>
-                <li>Analyzed and fortified source code, identifying weaknesses and providing recommendations that improved secure coding practices by 80%.</li>
-            </ul>
-        </section>
-
-        <section class="education">
-            <h2>Education</h2>
-            <h3>Masters of Engineering in Cybersecurity</h3>
-            <p><strong>University of Maryland, 2024</strong></p>
-            <ul>
-                <li><strong>Relevant Courses:</strong> Secure Coding, Cloud Security, Penetration Testing, Security Tools for Information Security, Network Security & Hacking of C and Unix Binaries.</li>
-            </ul>
-        </section>
-     </div>
-	<section>
-	</section>
     <footer>
-        <!-- Badge Container inside the footer -->
-        <div class="badge-container">
-            <img src="1710206175828.jpg" alt="Left Image">
-            <img class="center-badge" src="https://tryhackme-badges.s3.amazonaws.com/mjcube.png" alt="TryHackMe Badge">
-            <img src="1722444860954.jpg" alt="Right Image">
-        </div>
         <p>&copy; 2024 Marian John. All rights reserved.</p>
     </footer>
 </body>
