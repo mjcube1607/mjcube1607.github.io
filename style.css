@@ -3,12 +3,12 @@ body {
     margin: 0;
     padding: 0;
     color: #333;
-    background-color: #fafafa; /* Light grey background */
+    background-color: #eaeaea; /* Slightly darker grey background */
     line-height: 1.6;
 }
 
 header {
-    background-color: #ffffff; /* White background */
+    background-color: #f7f7f7; /* Light grey background for header */
     color: #333;
     padding: 1.5em 0;
     text-align: center;
@@ -16,7 +16,7 @@ header {
 }
 
 nav {
-    background-color: #ffffff; /* White background */
+    background-color: #f7f7f7; /* Light grey background for nav */
     padding: 1em;
     text-align: center;
     border-bottom: 1px solid #007bff; /* Soft blue border */
@@ -39,7 +39,7 @@ nav a:hover {
     padding: 2em;
     max-width: 900px;
     margin: auto;
-    background-color: #ffffff; /* White background */
+    background-color: #ffffff; /* Soft white background */
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Lighter shadow */
 }
@@ -53,7 +53,7 @@ section {
 }
 
 footer {
-    background-color: #ffffff; /* White background */
+    background-color: #f7f7f7; /* Light grey background for footer */
     color: #333;
     text-align: center;
     padding: 0.5em 0;
@@ -87,7 +87,6 @@ footer {
     margin-top: 10px; /* Space between the text and badge */
 }
 
-
 .badge:hover {
     transform: scale(1.1);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Slightly darker shadow */
@@ -96,4 +95,3 @@ footer {
 .project {
     margin-bottom: 2em;
 }
-
