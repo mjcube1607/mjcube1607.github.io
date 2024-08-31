@@ -2,29 +2,31 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    color: #333;
-    background: url('background.jpg') no-repeat center center fixed; /* Add your background image */
-    background-size: cover; /* Ensure the image covers the entire screen */
+    color: #e0e0e0; /* Light grey text for contrast */
+    background-color: #1a1a2e; /* Dark blue background for blending */
+    background-image: url('background.jpg'); /* Background image */
+    background-size: cover; /* Cover the entire background */
+    background-attachment: fixed; /* Keeps the background fixed while scrolling */
     line-height: 1.6;
 }
 
 header {
-    background-color: rgba(242, 242, 242, 0.9); /* Slightly transparent warmer light grey background for header */
-    color: #333;
+    background-color: rgba(32, 37, 67, 0.8); /* Semi-transparent dark blue */
+    color: #e0e0e0;
     padding: 1.5em 0;
     text-align: center;
-    border-bottom: 2px solid #007bff; /* Soft blue border */
+    border-bottom: 2px solid #20b2aa; /* Soft cyan border */
 }
 
 nav {
-    background-color: rgba(242, 242, 242, 0.9); /* Slightly transparent warmer light grey background for nav */
+    background-color: rgba(32, 37, 67, 0.8); /* Semi-transparent dark blue */
     padding: 1em;
     text-align: center;
-    border-bottom: 1px solid #007bff; /* Soft blue border */
+    border-bottom: 1px solid #20b2aa; /* Soft cyan border */
 }
 
 nav a {
-    color: #007bff; /* Soft blue text */
+    color: #20b2aa; /* Soft cyan text */
     margin: 0 1.5em;
     text-decoration: none;
     font-weight: bold;
@@ -32,7 +34,7 @@ nav a {
 }
 
 nav a:hover {
-    color: #0056b3; /* Darker blue on hover */
+    color: #2e8b57; /* Darker cyan on hover */
     text-decoration: underline;
 }
 
@@ -40,13 +42,14 @@ nav a:hover {
     padding: 2em;
     max-width: 900px;
     margin: auto;
-    background-color: rgba(252, 252, 252, 0.95); /* Slightly transparent off-white background */
+    background-color: rgba(27, 16, 32, 0.85); /* Semi-transparent dark purple */
+    color: #e0e0e0; /* Light grey text for readability */
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Lighter shadow */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Darker shadow for depth */
 }
 
 h1, h2 {
-    color: #007bff; /* Soft blue text */
+    color: #20b2aa; /* Soft cyan text */
 }
 
 section {
@@ -54,13 +57,13 @@ section {
 }
 
 footer {
-    background-color: rgba(242, 242, 242, 0.9); /* Slightly transparent warmer light grey background for footer */
-    color: #333;
+    background-color: rgba(32, 37, 67, 0.8); /* Semi-transparent dark blue */
+    color: #e0e0e0;
     text-align: center;
     padding: 0.5em 0;
     margin-top: 2em;
     width: 100%;
-    border-top: 2px solid #007bff; /* Soft blue border */
+    border-top: 2px solid #20b2aa; /* Soft cyan border */
 }
 
 .badge-container {
@@ -73,7 +76,7 @@ footer {
 }
 
 .badge-text {
-    color: #007bff; /* Soft blue text */
+    color: #20b2aa; /* Soft cyan text */
     margin-bottom: 10px;
     font-size: 16px;
 }
@@ -81,16 +84,16 @@ footer {
 .badge {
     width: 120px;
     height: auto;
-    border: 2px solid #007bff; /* Soft blue border */
+    border: 2px solid #20b2aa; /* Soft cyan border */
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Lighter shadow */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Darker shadow for depth */
     transition: transform 0.3s, box-shadow 0.3s;
     margin-top: 10px; /* Space between the text and badge */
 }
 
 .badge:hover {
     transform: scale(1.1);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Slightly darker shadow */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5); /* Darker shadow */
 }
 
 .project {
