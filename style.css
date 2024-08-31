@@ -9,7 +9,7 @@ body {
 }
 
 header {
-    background-color: rgba(242, 242, 242, 0.9); /* Slightly transparent warmer light grey background for header */
+    background-color: rgba(242, 242, 242, 0.7); /* Increased transparency */
     color: #333;
     padding: 1.5em 0;
     text-align: center;
@@ -17,7 +17,7 @@ header {
 }
 
 nav {
-    background-color: rgba(242, 242, 242, 0.9); /* Slightly transparent warmer light grey background for nav */
+    background-color: rgba(242, 242, 242, 0.7); /* Increased transparency */
     padding: 1em;
     text-align: center;
     border-bottom: 1px solid #007bff; /* Soft blue border */
@@ -40,7 +40,7 @@ nav a:hover {
     padding: 2em;
     max-width: 900px;
     margin: auto;
-    background-color: rgba(252, 252, 252, 0.95); /* Slightly transparent off-white background */
+    background-color: rgba(252, 252, 252, 0.85); /* Increased transparency */
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Lighter shadow */
 }
@@ -54,7 +54,7 @@ section {
 }
 
 footer {
-    background-color: rgba(242, 242, 242, 0.9); /* Slightly transparent warmer light grey background for footer */
+    background-color: rgba(242, 242, 242, 0.7); /* Increased transparency */
     color: #333;
     text-align: center;
     padding: 0.5em 0;
