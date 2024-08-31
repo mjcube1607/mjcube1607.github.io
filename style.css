@@ -3,12 +3,13 @@ body {
     margin: 0;
     padding: 0;
     color: #333;
-    background-color: #dcdcdc; /* Warmer light grey background */
+    background: url('background.jpg') no-repeat center center fixed; /* Add your background image */
+    background-size: cover; /* Ensure the image covers the entire screen */
     line-height: 1.6;
 }
 
 header {
-    background-color: #f2f2f2; /* Warmer light grey background for header */
+    background-color: rgba(242, 242, 242, 0.9); /* Slightly transparent warmer light grey background for header */
     color: #333;
     padding: 1.5em 0;
     text-align: center;
@@ -16,7 +17,7 @@ header {
 }
 
 nav {
-    background-color: #f2f2f2; /* Warmer light grey background for nav */
+    background-color: rgba(242, 242, 242, 0.9); /* Slightly transparent warmer light grey background for nav */
     padding: 1em;
     text-align: center;
     border-bottom: 1px solid #007bff; /* Soft blue border */
@@ -39,7 +40,7 @@ nav a:hover {
     padding: 2em;
     max-width: 900px;
     margin: auto;
-    background-color: #fcfcfc; /* Slightly off-white background */
+    background-color: rgba(252, 252, 252, 0.95); /* Slightly transparent off-white background */
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Lighter shadow */
 }
@@ -53,7 +54,7 @@ section {
 }
 
 footer {
-    background-color: #f2f2f2; /* Warmer light grey background for footer */
+    background-color: rgba(242, 242, 242, 0.9); /* Slightly transparent warmer light grey background for footer */
     color: #333;
     text-align: center;
     padding: 0.5em 0;
@@ -95,3 +96,4 @@ footer {
 .project {
     margin-bottom: 2em;
 }
+
