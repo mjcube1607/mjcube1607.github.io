@@ -19,6 +19,7 @@ header {
 
 nav {
     background-color: transparent;
+    color: #fff;
     padding: 1em 2em;
     text-align: left;
     border-bottom: 1px solid #fff; /* White border */
@@ -35,7 +36,7 @@ nav a {
 }
 
 nav a:hover {
-    color: #ccc; /* Slightly lighter white on hover */
+    color: #fff; /* Slightly lighter white on hover */
     text-decoration: underline;
 }
 
