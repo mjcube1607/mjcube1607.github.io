@@ -10,7 +10,7 @@ body {
 }
 
 header {
-    background-color: inherit; /* Use the body’s background color */
+    background-color: rgba(242, 242, 242, 0.7); /* Use the body’s background color */
     color: #333;
     padding: 1.5em 0;
     text-align: center;
@@ -19,7 +19,7 @@ header {
 }
 
 nav {
-    background-color: inherit; /* Use the body’s background color */
+    background-color: rgba(242, 242, 242, 0.7); /* Use the body’s background color */
     padding: 1em;
     text-align: center;
     border-bottom: 1px solid #007bff;
@@ -42,7 +42,7 @@ nav a:hover {
 .container {
     padding: 2em;
     margin: auto;
-    background-color: rgba(252, 252, 252, 0.85);
+    background-color: rgba(242, 242, 242, 0.7);
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     max-width: 100%;
