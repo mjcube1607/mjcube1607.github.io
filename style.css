@@ -2,7 +2,7 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    color: #fff; /* Set content font color to white */
+    color: #fff; /* Set all font colors to white */
     background: url('background.jpg') no-repeat center center fixed;
     background-size: cover;
     line-height: 1.6;
@@ -10,32 +10,32 @@ body {
 
 header {
     background-color: transparent;
-    color: #007bff; /* Set title color to blue */
-    padding: 1.5em 2em; /* Add padding to the left */
-    text-align: left; /* Align text to the left */
-    border-bottom: 2px solid #007bff;
+    color: #fff; /* Set header text to white */
+    padding: 1.5em 2em;
+    text-align: left;
+    border-bottom: 2px solid #fff; /* White border */
     width: 100%;
 }
 
 nav {
     background-color: transparent;
-    padding: 1em 2em; /* Add padding to the left */
-    text-align: left; /* Align navigation to the left */
-    border-bottom: 1px solid #007bff;
+    padding: 1em 2em;
+    text-align: left;
+    border-bottom: 1px solid #fff; /* White border */
     width: 100%;
 }
 
 nav a {
-    color: #007bff; /* Keep nav links blue */
-    margin: 0 1.5em 0 0; /* Adjust margin for left alignment */
+    color: #fff; /* Set nav links to white */
+    margin: 0 1.5em 0 0;
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s;
-    display: inline-block; /* Ensure links stay in line */
+    display: inline-block;
 }
 
 nav a:hover {
-    color: #0056b3; /* Darker blue on hover */
+    color: #ccc; /* Slightly lighter white on hover */
     text-decoration: underline;
 }
 
@@ -45,8 +45,8 @@ nav a:hover {
     background-color: transparent; /* Remove container background color */
     border-radius: 8px;
     max-width: 100%;
-    box-shadow: none; /* Remove shadow */
-    text-align: left; /* Align content to the left */
+    box-shadow: none;
+    text-align: left;
 }
 
 section {
@@ -56,31 +56,31 @@ section {
 }
 
 h1, h2 {
-    color: #007bff; /* Set headings color to blue */
-    text-align: left; /* Align headings to the left */
+    color: #fff; /* Set headings to white */
+    text-align: left;
 }
 
 footer {
     background-color: transparent;
     color: #fff;
-    text-align: left; /* Align footer text to the left */
+    text-align: left;
     padding: 0.5em 2em;
     margin-top: 2em;
     width: 100%;
-    border-top: 2px solid #007bff;
+    border-top: 2px solid #fff; /* White border */
 }
 
 .badge-container {
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* Align badges to the left */
-    text-align: left; /* Align badge text to the left */
+    align-items: flex-start;
+    text-align: left;
     margin-bottom: 20px;
     width: 100%;
 }
 
 .badge-text {
-    color: #007bff;
+    color: #fff; /* Set badge text to white */
     margin-bottom: 10px;
     font-size: 16px;
 }
@@ -88,7 +88,7 @@ footer {
 .badge {
     width: 120px;
     height: auto;
-    border: 2px solid #007bff;
+    border: 2px solid #fff; /* White border */
     border-radius: 8px;
     transition: transform 0.3s;
     margin-top: 10px;
