@@ -3,26 +3,27 @@ body {
     margin: 0;
     padding: 0;
     color: #333;
+    background-color: rgba(242, 242, 242, 0.7); /* Match the header's background */
     background: url('background.jpg') no-repeat center center fixed;
     background-size: cover;
     line-height: 1.6;
 }
 
 header {
-    background-color: rgba(242, 242, 242, 0.7);
+    background-color: inherit; /* Use the body’s background color */
     color: #333;
     padding: 1.5em 0;
     text-align: center;
     border-bottom: 2px solid #007bff;
-    width: 100%; /* Make sure header spans the full width */
+    width: 100%;
 }
 
 nav {
-    background-color: rgba(242, 242, 242, 0.7);
+    background-color: inherit; /* Use the body’s background color */
     padding: 1em;
     text-align: center;
     border-bottom: 1px solid #007bff;
-    width: 100%; /* Ensure the nav spans the full width */
+    width: 100%;
 }
 
 nav a {
@@ -44,13 +45,13 @@ nav a:hover {
     background-color: rgba(252, 252, 252, 0.85);
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 100%; /* Allow container to take up full width */
+    max-width: 100%;
 }
 
 section {
     margin-bottom: 2em;
-    padding: 0 2em; /* Add padding to maintain readability */
-    max-width: none; /* Remove max-width to allow full-width sections */
+    padding: 0 2em;
+    max-width: none;
 }
 
 h1, h2 {
@@ -58,7 +59,7 @@ h1, h2 {
 }
 
 footer {
-    background-color: rgba(242, 242, 242, 0.7);
+    background-color: inherit; /* Use the body’s background color */
     color: #333;
     text-align: center;
     padding: 0.5em 0;
@@ -69,34 +70,3 @@ footer {
 
 .badge-container {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin-bottom: 20px;
-    width: 100%;
-}
-
-.badge-text {
-    color: #007bff;
-    margin-bottom: 10px;
-    font-size: 16px;
-}
-
-.badge {
-    width: 120px;
-    height: auto;
-    border: 2px solid #007bff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s, box-shadow 0.3s;
-    margin-top: 10px;
-}
-
-.badge:hover {
-    transform: scale(1.1);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-
-.project {
-    margin-bottom: 2em;
-}
