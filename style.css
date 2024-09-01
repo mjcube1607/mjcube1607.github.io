@@ -27,7 +27,7 @@ nav {
 }
 
 nav a {
-    color: #fff; /* Set nav links to white */
+    color: #fff !important; /* Force nav links to be white */
     margin: 0 1.5em 0 0;
     text-decoration: none;
     font-weight: bold;
@@ -35,9 +35,11 @@ nav a {
     display: inline-block;
 }
 
-nav a:hover {
-    color: #fff; /* Slightly lighter white on hover */
+nav a:hover, nav a:focus {
+    color: #fff !important; /* Keep the color white on hover and focus */
+    text-decoration: underline; /* Optional: underline on hover for visual feedback */
 }
+
 
 .container {
     padding: 2em;
