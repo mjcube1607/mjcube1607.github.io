@@ -9,28 +9,29 @@ body {
 }
 
 header {
-    background-color: transparent; /* Remove background color */
+    background-color: transparent;
     color: #007bff; /* Set title color to blue */
-    padding: 1.5em 0;
-    text-align: center;
+    padding: 1.5em 2em; /* Add padding to the left */
+    text-align: left; /* Align text to the left */
     border-bottom: 2px solid #007bff;
     width: 100%;
 }
 
 nav {
-    background-color: transparent; /* Remove background color */
-    padding: 1em;
-    text-align: center;
+    background-color: transparent;
+    padding: 1em 2em; /* Add padding to the left */
+    text-align: left; /* Align navigation to the left */
     border-bottom: 1px solid #007bff;
     width: 100%;
 }
 
 nav a {
     color: #007bff; /* Keep nav links blue */
-    margin: 0 1.5em;
+    margin: 0 1.5em 0 0; /* Adjust margin for left alignment */
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s;
+    display: inline-block; /* Ensure links stay in line */
 }
 
 nav a:hover {
@@ -45,6 +46,7 @@ nav a:hover {
     border-radius: 8px;
     max-width: 100%;
     box-shadow: none; /* Remove shadow */
+    text-align: left; /* Align content to the left */
 }
 
 section {
@@ -55,13 +57,14 @@ section {
 
 h1, h2 {
     color: #007bff; /* Set headings color to blue */
+    text-align: left; /* Align headings to the left */
 }
 
 footer {
-    background-color: transparent; /* Remove background color */
-    color: #fff; /* Set footer text color to white */
-    text-align: center;
-    padding: 0.5em 0;
+    background-color: transparent;
+    color: #fff;
+    text-align: left; /* Align footer text to the left */
+    padding: 0.5em 2em;
     margin-top: 2em;
     width: 100%;
     border-top: 2px solid #007bff;
@@ -70,14 +73,14 @@ footer {
 .badge-container {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
+    align-items: flex-start; /* Align badges to the left */
+    text-align: left; /* Align badge text to the left */
     margin-bottom: 20px;
     width: 100%;
 }
 
 .badge-text {
-    color: #007bff; /* Keep badge text color blue */
+    color: #007bff;
     margin-bottom: 10px;
     font-size: 16px;
 }
@@ -85,7 +88,7 @@ footer {
 .badge {
     width: 120px;
     height: auto;
-    border: 2px solid #007bff; /* Keep badge border blue */
+    border: 2px solid #007bff;
     border-radius: 8px;
     transition: transform 0.3s;
     margin-top: 10px;
