@@ -27,7 +27,7 @@ nav {
 }
 
 nav a {
-    color: #fff !important; /* Force nav links to be white */
+    color: #ff0000 !important; /* Set nav links to red */
     margin: 0 1.5em 0 0;
     text-decoration: none;
     font-weight: bold;
@@ -36,9 +36,10 @@ nav a {
 }
 
 nav a:hover, nav a:focus {
-    color: #fff !important; /* Keep the color white on hover and focus */
+    color: #ff0000 !important; /* Keep the color red on hover and focus */
     text-decoration: underline; /* Optional: underline on hover for visual feedback */
 }
+
 
 
 .container {
