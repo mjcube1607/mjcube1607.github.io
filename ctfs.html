@@ -4,21 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CTFs Walkthrough - Marian John</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script> <!-- Dynamically loads header/footer -->
 </head>
 <body>
-    <header>
-        <h1>Marian John</h1>
-        <p>Security Engineer | CompTIA Security+ | eJPTv2 | UMD Graduate | Ex-TCS</p>
-    </header>
-    
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="experience.html">Experience</a>
-        <a href="projects.html">Projects</a>
-        <a href="certifications.html">Certifications</a>
-	<a href="ctfs.html">CTF</a>
-    </nav>
+
+    <div id="header-container"></div> <!-- Header loads dynamically -->
 
     <div class="container">
         <section>
@@ -26,18 +17,17 @@
             <p>Below are the walkthroughs of various Capture The Flag (CTF) challenges that I have completed:</p>
             <script src="https://tryhackme.com/badge/1354624"></script>
             <ul>
-                <li><strong>Agent Sudo:</strong> Web App, FTP, Binwalk, John and Steghide. <a href="Agent_Sudo.pdf">Link to the walkthrough</a>.</li>
-                <li><strong>Basic Pentesting:</strong> enum4Linux, Hydra, LinEnum, John_ssh and id_rsa. <a href="Basic%20Pentesting.pdf">Link to the walkthrough</a>.</li>
-                <li><strong>Kenobi:</strong> SMB Enumeration, NFS, Proftpd 1.3.5 vulnerabilirty, SITE CPFR CPTO and id_rsa. <a href="Kenobi.pdf">Link to the walkthrough</a>.</li>
-		<li><strong>Steel Mountain:</strong>Rejjetto HTTP File server vulnerability, Metasploit, PowerUp.ps1, Unquotted Service Paths ans sc start stop. <a href="Steel_Mountain.pdf">Link to the walkthrough</a>.</li>
-		<li><strong>Cyborg:</strong> Web Directory Enumeration, Borg backup recovery, Hashcat, SSH, sudo -l, Escalating priveleges through altering bakup file with sudo permissions. <a href="Cyborg.pdf">Link to the walkthrough</a>.</li>
+                <li><strong>Agent Sudo:</strong> Web App, FTP, Binwalk, John, and Steghide. <a href="Agent_Sudo.pdf">Read Walkthrough</a>.</li>
+                <li><strong>Basic Pentesting:</strong> enum4Linux, Hydra, LinEnum, John SSH, and id_rsa. <a href="Basic%20Pentesting.pdf">Read Walkthrough</a>.</li>
+                <li><strong>Kenobi:</strong> SMB Enumeration, NFS, Proftpd 1.3.5 vulnerability, SITE CPFR CPTO, and id_rsa. <a href="Kenobi.pdf">Read Walkthrough</a>.</li>
+                <li><strong>Steel Mountain:</strong> Rejetto HTTP File Server vulnerability, Metasploit, PowerUp.ps1, Unquoted Service Paths, and `sc start stop`. <a href="Steel_Mountain.pdf">Read Walkthrough</a>.</li>
+                <li><strong>Cyborg:</strong> Web Directory Enumeration, Borg backup recovery, Hashcat, SSH, `sudo -l`, and escalating privileges through altering backup files with sudo permissions. <a href="Cyborg.pdf">Read Walkthrough</a>.</li>
             </ul>
         </section>
     </div>
 
-    <footer>
-        <p>&copy; 2024 Marian John. All rights reserved.</p>
-    </footer>
+    <div id="footer-container"></div> <!-- Footer loads dynamically -->
+
 </body>
 </html>
 

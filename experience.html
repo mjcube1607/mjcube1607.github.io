@@ -4,94 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Experience - Marian John</title>
-    <link rel="stylesheet" href="style.css">
-    <style>
-        body {
-            font-family: 'Courier New', Courier, monospace;
-            margin: 0;
-            padding: 0;
-            color: #fff;
-            background-color: #000;
-            line-height: 1.6;
-        }
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 1.5em 0;
-            text-align: center;
-            border-bottom: 2px solid #4CAF50;
-        }
-        nav {
-            background-color: #222;
-            padding: 1em;
-            text-align: center;
-            border-bottom: 1px solid #4CAF50;
-        }
-        nav a {
-            color: #4CAF50;
-            margin: 0 1.5em;
-            text-decoration: none;
-            font-weight: bold;
-            transition: color 0.3s;
-        }
-        nav a:hover {
-            color: #fff;
-            text-decoration: underline;
-        }
-        .container {
-            padding: 2em;
-            max-width: 900px;
-            margin: auto;
-            background-color: #111;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-        }
-        h1, h2 {
-            color: #4CAF50;
-            margin-bottom: 0.5em;
-        }
-        section.experience {
-            margin-bottom: 2em;
-            padding: 1.5em;
-            background-color: #222;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-        }
-        h3 {
-            color: #4CAF50;
-            margin-bottom: 0.5em;
-        }
-        ul {
-            list-style-type: disc;
-            padding-left: 1.5em;
-        }
-        li {
-            margin-bottom: 0.8em;
-        }
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 0.5em 0;
-            margin-top: 2em;
-            width: 100%;
-            border-top: 2px solid #4CAF50;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script> <!-- Load header & footer dynamically -->
 </head>
 <body>
-    <header>
-        <h1>Marian John</h1>
-        <p>Security Engineer | CompTIA Security+ | eJPTv2 | UMD Graduate | Ex-TCS</p>
-    </header>
-    
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="experience.html">Experience</a>
-        <a href="projects.html">Projects</a>
-        <a href="certifications.html">Certifications</a>
-        <a href="ctfs.html">CTFs Walkthrough</a>
-    </nav>
+
+    <div id="header-container"></div> <!-- Header loads dynamically -->
 
     <div class="container">
         <section>
@@ -123,8 +41,7 @@
         </section>
     </div>
 
-    <footer>
-        <p>&copy; 2024 Marian John. All rights reserved.</p>
-    </footer>
+    <div id="footer-container"></div> <!-- Footer loads dynamically -->
+
 </body>
 </html>

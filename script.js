@@ -50,3 +50,24 @@ document.getElementById("dark-mode-toggle").addEventListener("click", function (
 });
 
 document.body.classList.add("fade-page");
+document.addEventListener("DOMContentLoaded", function () {
+    fetch("http://localhost:3000/fetch-projects")
+        .then(response => response.json())
+        .then(data => {
+            if (data.projects) {
+                const container = document.getElementById("project-list");
+                container.innerHTML = ""; // Clear old data
+
+                data.projects.forEach(project => {
+                    const projectItem = document.createElement("div");
+                    projectItem.classList.add("project");
+                    projectItem.innerHTML = `
+                        <h3>${project.title}</h3>
+                        <p>${project.description}</p>
+                    `;
+                    container.appendChild(projectItem);
+                });
+            }
+        })
+        .catch(error => console.error("Error fetching projects:", error));
+});
