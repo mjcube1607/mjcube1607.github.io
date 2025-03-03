@@ -33,4 +33,20 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         })
         .catch(error => console.error("Error fetching Medium posts:", error));
+        
+    // Load header
+    fetch("header.html")
+        .then(response => response.text())
+        .then(data => document.getElementById("header-container").innerHTML = data);
+
+    // Load footer
+    fetch("footer.html")
+        .then(response => response.text())
+        .then(data => document.getElementById("footer-container").innerHTML = data);
 });
+
+document.getElementById("dark-mode-toggle").addEventListener("click", function () {
+    document.body.classList.toggle("dark-mode");
+});
+
+document.body.classList.add("fade-page");

@@ -1,3 +1,59 @@
+/* Modern, sleek layout inspired by Meta */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background: linear-gradient(to bottom, #ffffff, #e3e6eb);
+    line-height: 1.6;
+}
+
+/* Smooth Glassmorphism Header */
+header {
+    background: rgba(242, 242, 242, 0.8);
+    color: #333;
+    padding: 1em 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    backdrop-filter: blur(10px);
+    border-bottom: 2px solid #007bff;
+    z-index: 1000;
+}
+
+/* Navigation Menu */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    color: #007bff;
+    font-size: 1.1em;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+/* Content Container */
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Post Cards */
 .posts-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -6,25 +62,44 @@
 }
 
 .card {
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 15px;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
     background: white;
-    transition: transform 0.2s ease-in-out;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
 }
 
 .card:hover {
     transform: scale(1.05);
 }
 
-.card h2 {
-    font-size: 18px;
-    margin-bottom: 10px;
+/* Smooth Fade-In Effect */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+.dark-mode {
+    background: #222;
+    color: white;
 }
 
-.card a {
-    text-decoration: none;
-    color: #0077b6;
-    font-weight: bold;
+.dark-mode header,
+.dark-mode nav,
+.dark-mode footer {
+    background: rgba(0, 0, 0, 0.8);
+}
+.fade-page {
+    opacity: 0;
+    animation: fadeIn 0.5s forwards;
+}
+/* Footer */
+footer {
+    background: rgba(242, 242, 242, 0.8);
+    color: #333;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    border-top: 2px solid #007bff;
 }
