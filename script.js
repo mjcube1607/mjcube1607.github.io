@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const mediumUsername = "yourMediumUsername"; // Replace with your Medium username
+    const mediumUsername = "mjcube1999"; // Replace with your Medium username
     const rssFeedUrl = `https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@${mediumUsername}`;
 
     fetch(rssFeedUrl)
