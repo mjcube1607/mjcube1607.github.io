@@ -57,42 +57,87 @@ nav a:hover {
     animation: fadeIn 1s ease-in-out;
 }
 
-/* ✅ Medium Posts (Fixed Card View) */
+/* ✅ Medium Posts Section (Like Meta UI) */
 #medium-posts {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /* Responsive grid */
     gap: 20px;
     padding: 20px;
+    margin: auto;
+    max-width: 1200px;
 }
 
-/* ✅ Card Design for Each Post */
+/* ✅ Card Design (Inspired by Meta) */
 .card {
-    background: white;
-    border-radius: 10px;
+    background: rgba(255, 255, 255, 1); /* Ensure full visibility */
+    border-radius: 12px;
     padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.05); /* Soft border */
 }
 
+/* ✅ Subtle Hover Effect */
 .card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
 }
 
+/* ✅ Card Title */
 .card h2 {
-    color: #007bff;
+    color: #1c1e21; /* Darker color like Meta */
     font-size: 1.2em;
+    font-weight: bold;
     margin-bottom: 10px;
+    line-height: 1.4;
 }
 
+/* ✅ Post Date */
 .card p {
-    color: #666;
+    color: #65676b;
     font-size: 0.9em;
     margin-bottom: 15px;
+}
+
+/* ✅ "Read More" Link */
+.card a {
+    text-decoration: none;
+    color: #1877f2; /* Meta blue */
+    font-weight: bold;
+    transition: color 0.2s ease-in-out;
+    align-self: flex-start;
+}
+
+.card a:hover {
+    color: #0d64e2;
+    text-decoration: underline;
+}
+
+/* ✅ Dark Mode Support */
+.dark-mode .card {
+    background: rgba(30, 30, 30, 1);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.dark-mode .card h2 {
+    color: white;
+}
+
+.dark-mode .card p {
+    color: #b0b3b8;
+}
+
+.dark-mode .card a {
+    color: #4a90e2;
+}
+
+.dark-mode .card a:hover {
+    color: #82b1ff;
 }
 
 /* ✅ Styling for "Read More" Link */
