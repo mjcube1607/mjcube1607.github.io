@@ -71,3 +71,32 @@ document.addEventListener("DOMContentLoaded", function () {
         })
         .catch(error => console.error("Error fetching projects:", error));
 });
+async function fetchGitHubContributions() {
+    const username = "marianbme"; // Replace with your GitHub username
+    const url = `https://api.github.com/users/${username}/repos`;
+
+    try {
+        const response = await fetch(url);
+        const repos = await response.json();
+
+        const contributionsContainer = document.getElementById("github-contributions");
+        contributionsContainer.innerHTML = ""; // Clear previous content
+
+        repos.forEach(repo => {
+            const repoItem = document.createElement("div");
+            repoItem.classList.add("repo");
+
+            repoItem.innerHTML = `
+                <h3><a href="${repo.html_url}" target="_blank">${repo.name}</a></h3>
+                <p>${repo.description || "No description available"}</p>
+                <p>⭐ Stars: ${repo.stargazers_count} | 🍴 Forks: ${repo.forks_count}</p>
+            `;
+
+            contributionsContainer.appendChild(repoItem);
+        });
+    } catch (error) {
+        console.error("Error fetching GitHub contributions:", error);
+    }
+}
+
+document.addEventListener("DOMContentLoaded", fetchGitHubContributions);
