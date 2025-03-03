@@ -6,6 +6,7 @@ body {
     color: #333;
     background: linear-gradient(to bottom, #ffffff, #e3e6eb);
     line-height: 1.6;
+    transition: background 0.3s ease, color 0.3s ease;
 }
 
 /* Smooth Glassmorphism Header */
@@ -27,6 +28,7 @@ nav {
     display: flex;
     justify-content: center;
     gap: 20px;
+    padding: 10px 0;
 }
 
 nav a {
@@ -34,12 +36,14 @@ nav a {
     font-size: 1.1em;
     font-weight: bold;
     text-decoration: none;
-    transition: 0.3s;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background 0.3s ease, color 0.3s ease;
 }
 
 nav a:hover {
-    color: #0056b3;
-    text-decoration: underline;
+    background: #007bff;
+    color: #fff;
 }
 
 /* Content Container */
@@ -49,7 +53,7 @@ nav a:hover {
     padding: 20px;
     background: rgba(255, 255, 255, 0.9);
     box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
+    border-radius: 10px;
     animation: fadeIn 1s ease-in-out;
 }
 
@@ -66,11 +70,12 @@ nav a:hover {
     border-radius: 10px;
     padding: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 .card:hover {
     transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 /* Smooth Fade-In Effect */
@@ -78,6 +83,8 @@ nav a:hover {
     from { opacity: 0; transform: translateY(10px); }
     to { opacity: 1; transform: translateY(0); }
 }
+
+/* Dark Mode */
 .dark-mode {
     background: #222;
     color: white;
@@ -88,10 +95,37 @@ nav a:hover {
 .dark-mode footer {
     background: rgba(0, 0, 0, 0.8);
 }
+
+.dark-mode nav a {
+    color: #fff;
+}
+
+.dark-mode nav a:hover {
+    background: #007bff;
+    color: #fff;
+}
+
+.dark-mode .container {
+    background: rgba(40, 40, 40, 0.9);
+    color: #ddd;
+}
+
+.dark-mode .card {
+    background: rgba(50, 50, 50, 0.9);
+    color: white;
+}
+
+.dark-mode .repo {
+    background: rgba(50, 50, 50, 0.9);
+    color: white;
+}
+
+/* Fade-in Animation */
 .fade-page {
     opacity: 0;
     animation: fadeIn 0.5s forwards;
 }
+
 /* Badge Container */
 .badge-container {
     display: flex;
@@ -117,6 +151,7 @@ nav a:hover {
 .badge:hover {
     transform: scale(1.1);
 }
+
 /* GitHub Contributions Section */
 #github-contributions {
     display: flex;
@@ -146,6 +181,7 @@ nav a:hover {
 .repo h3 a:hover {
     text-decoration: underline;
 }
+
 /* Footer */
 footer {
     background: rgba(242, 242, 242, 0.8);
@@ -156,4 +192,29 @@ footer {
     bottom: 0;
     width: 100%;
     border-top: 2px solid #007bff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container {
+        width: 90%;
+    }
+
+    .posts-container {
+        grid-template-columns: 1fr;
+    }
+
+    .badge-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .repo {
+        max-width: 100%;
+    }
 }
