@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 });
 
-// ✅ Function: Fetch Medium Posts (With Images)
+// ✅ Function: Fetch Medium Posts (With Description)
 function fetchMediumPosts() {
     const mediumUsername = "mjcube1999"; // Your Medium username
     const rssFeedUrl = `https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@${mediumUsername}`;
@@ -36,7 +36,7 @@ function fetchMediumPosts() {
                     const card = document.createElement("div");
                     card.className = "card";
 
-                    // Extracting thumbnail from content
+                    // ✅ Extract Thumbnail Image
                     let imgSrc = "default-image.jpg"; // Fallback image
                     const imgRegex = /<img.*?src=["'](.*?)["']/; // Regex to extract img URL
                     const match = imgRegex.exec(item.content);
@@ -44,10 +44,18 @@ function fetchMediumPosts() {
                         imgSrc = match[1]; // Use extracted image
                     }
 
+                    // ✅ Extract Text Content (Stripped HTML)
+                    const tempDiv = document.createElement("div");
+                    tempDiv.innerHTML = item.content; // Convert HTML to DOM element
+                    let description = tempDiv.textContent || tempDiv.innerText || "";
+                    description = description.replace(/\s+/g, " ").trim(); // Clean up spaces
+                    description = description.substring(0, 150) + "..."; // Limit to 150 chars
+
                     card.innerHTML = `
                         <img src="${imgSrc}" alt="Medium Post Image">
                         <h2>${item.title}</h2>
-                        <p>${new Date(item.pubDate).toDateString()}</p>
+                        <p class="post-description">${description}</p>
+                        <p class="post-date">${new Date(item.pubDate).toDateString()}</p>
                         <a href="${item.link}" target="_blank">Read More</a>
                     `;
                     postsContainer.appendChild(card);
@@ -58,7 +66,6 @@ function fetchMediumPosts() {
         })
         .catch(error => console.error("Error fetching Medium posts:", error));
 }
-
 // ✅ Function: Fetch GitHub Contributions
 async function fetchGitHubContributions() {
     const username = "marianbme"; // Replace with your GitHub username
