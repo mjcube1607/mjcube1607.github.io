@@ -46,11 +46,11 @@ nav a:hover {
     color: #fff;
 }
 
-/* Content Container */
+/* Content Container (Fix for Stacking Issues) */
 .container {
-    max-width: 1200px;
+    max-width: 1400px; /* Increase to allow more grid space */
     margin: auto;
-    padding: 20px;
+    padding: 15px; /* Slightly reduce padding */
     background: rgba(255, 255, 255, 0.9);
     box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
@@ -60,49 +60,55 @@ nav a:hover {
 /* ✅ Medium Posts Section (Meta UI Inspired) */
 #medium-posts {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /* Responsive layout */
+    gap: 30px; /* Space between cards */
+    padding: 20px;
+    max-width: 100%;
+    justify-content: center; /* Centers cards in available space */
+}
+
+/* ✅ Medium Posts Grid Layout */
+#medium-posts {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
     gap: 25px;
     padding: 20px;
     margin: auto;
     max-width: 1200px;
 }
 
-/* ✅ Card Styling (Gradient, Rounded Corners, and Shadows) */
+/* ✅ Card Styling */
 .card {
     background: #fff;
     border-radius: 12px;
-    padding: 20px;
+    overflow: hidden;
+    padding: 0;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
     border: 1px solid rgba(0, 0, 0, 0.05);
-    margin-bottom: 20px; /* Adds spacing between stacked cards */
 }
 
-/* ✅ Hover Effect for Lifting Effect */
-.card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
-}
-
-/* ✅ Card Image Integration */
+/* ✅ Image Styling for Cards */
 .card img {
     width: 100%;
-    height: auto;
-    border-radius: 12px;
+    height: 180px;
     object-fit: cover;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
 }
 
-/* ✅ Title (Bold & Readable) */
+/* ✅ Title & Text Styling */
 .card h2 {
-    color: #1c1e21;
-    font-size: 1.3em;
+    padding: 15px;
+    font-size: 1.2em;
     font-weight: bold;
-    margin-top: 15px;
-    line-height: 1.4;
+    color: #1c1e21;
+    margin: 0;
+}   line-height: 1.4;
 }
 
 /* ✅ Description (Meta-style) */

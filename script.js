@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 });
 
-// ✅ Function: Fetch Medium Posts
+// ✅ Function: Fetch Medium Posts (With Images)
 function fetchMediumPosts() {
     const mediumUsername = "mjcube1999"; // Your Medium username
     const rssFeedUrl = `https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@${mediumUsername}`;
@@ -32,10 +32,20 @@ function fetchMediumPosts() {
             postsContainer.innerHTML = ""; // Clear previous content
 
             if (data.status === "ok" && data.items.length > 0) {
-                data.items.slice(0, 20).forEach(item => {
+                data.items.slice(0, 6).forEach(item => { // Limit to 6 latest posts
                     const card = document.createElement("div");
                     card.className = "card";
+
+                    // Extracting thumbnail from content
+                    let imgSrc = "default-image.jpg"; // Fallback image
+                    const imgRegex = /<img.*?src=["'](.*?)["']/; // Regex to extract img URL
+                    const match = imgRegex.exec(item.content);
+                    if (match) {
+                        imgSrc = match[1]; // Use extracted image
+                    }
+
                     card.innerHTML = `
+                        <img src="${imgSrc}" alt="Medium Post Image">
                         <h2>${item.title}</h2>
                         <p>${new Date(item.pubDate).toDateString()}</p>
                         <a href="${item.link}" target="_blank">Read More</a>
