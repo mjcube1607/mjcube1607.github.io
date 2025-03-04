@@ -32,7 +32,7 @@ function fetchMediumPosts() {
             postsContainer.innerHTML = ""; // Clear previous content
 
             if (data.status === "ok" && data.items.length > 0) {
-                data.items.slice(0, 5).forEach(item => {
+                data.items.slice(0, 20).forEach(item => {
                     const card = document.createElement("div");
                     card.className = "card";
                     card.innerHTML = `
