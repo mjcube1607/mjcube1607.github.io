@@ -32,33 +32,29 @@ header {
     height: 30px;
 }
 
-/* ✅ Navigation Menu */
-.nav-links {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
-
+/* ✅ Navigation Menu (Fix Bullets & Alignment) */
 .nav-links ul {
-    list-style: none;
-    display: flex;
-    gap: 25px;
+    display: flex; /* Makes links horizontal */
+    list-style: none; /* Removes bullet points */
+    gap: 20px;
     margin: 0;
     padding: 0;
+    align-items: center;
 }
 
-/* ✅ Navigation Link Styling */
+/* ✅ Navigation Links */
 .nav-links ul li a {
     text-decoration: none;
     color: #1c1e21; /* Meta dark gray */
-    font-size: 0.95em;
-    font-weight: 500;
-    padding: 8px 10px;
+    font-size: 1em;
+    font-weight: bold;
+    padding: 10px 15px;
     transition: color 0.2s ease;
 }
 
+/* ✅ Fix Hover Effect */
 .nav-links ul li a:hover {
-    color: #007bff; /* Meta blue on hover */
+    color: #007bff; /* Meta blue */
 }
 
 /* ✅ Dropdown Arrow Styling */
