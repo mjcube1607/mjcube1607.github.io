@@ -57,71 +57,81 @@ nav a:hover {
     animation: fadeIn 1s ease-in-out;
 }
 
-/* ✅ Medium Posts Section (Like Meta UI) */
+/* ✅ Medium Posts Section (Meta UI Inspired) */
 #medium-posts {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /* Responsive grid */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
     padding: 20px;
     margin: auto;
     max-width: 1200px;
 }
 
-/* ✅ Card Design (Inspired by Meta) */
+/* ✅ Card Styling (Gradient, Rounded Corners, and Shadows) */
 .card {
-    background: rgba(255, 255, 255, 1); /* Ensure full visibility */
-    border-radius: 12px;
+    background: linear-gradient(135deg, #f8f9fa, #e3e6eb);
+    border-radius: 16px;
+    overflow: hidden;
     padding: 20px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
-    border: 1px solid rgba(0, 0, 0, 0.05); /* Soft border */
+    border: none;
 }
 
-/* ✅ Subtle Hover Effect */
+/* ✅ Hover Effect for Lifting Effect */
 .card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 }
 
-/* ✅ Card Title */
+/* ✅ Card Image Integration */
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+/* ✅ Title (Bold & Readable) */
 .card h2 {
-    color: #1c1e21; /* Darker color like Meta */
-    font-size: 1.2em;
+    color: #1c1e21;
+    font-size: 1.3em;
     font-weight: bold;
-    margin-bottom: 10px;
+    margin-top: 15px;
     line-height: 1.4;
 }
 
-/* ✅ Post Date */
+/* ✅ Description (Meta-style) */
 .card p {
     color: #65676b;
-    font-size: 0.9em;
+    font-size: 0.95em;
     margin-bottom: 15px;
 }
 
-/* ✅ "Read More" Link */
+/* ✅ Read More Button (Blended with Design) */
 .card a {
     text-decoration: none;
-    color: #1877f2; /* Meta blue */
+    color: #007bff;
     font-weight: bold;
+    display: inline-block;
+    margin-top: auto;
     transition: color 0.2s ease-in-out;
-    align-self: flex-start;
 }
 
 .card a:hover {
-    color: #0d64e2;
+    color: #0056b3;
     text-decoration: underline;
 }
 
-/* ✅ Dark Mode Support */
+/* ✅ Dark Mode Optimization */
 .dark-mode .card {
     background: rgba(30, 30, 30, 1);
     color: white;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: none;
 }
 
 .dark-mode .card h2 {
@@ -138,20 +148,6 @@ nav a:hover {
 
 .dark-mode .card a:hover {
     color: #82b1ff;
-}
-
-/* ✅ Styling for "Read More" Link */
-.card a {
-    text-decoration: none;
-    color: #007bff;
-    font-weight: bold;
-    align-self: flex-start;
-    transition: color 0.3s ease-in-out;
-}
-
-.card a:hover {
-    color: #0056b3;
-    text-decoration: underline;
 }
 
 /* ✅ Dark Mode */
