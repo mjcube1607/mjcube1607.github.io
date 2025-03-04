@@ -111,7 +111,7 @@ nav a:hover {
 }
 /* ✅ Medium Post Description Styling */
 .card .post-description {
-    padding: 10px 15px;
+    padding: 15px;
     color: #444; /* Slightly darker for better readability */
     font-size: 0.95em;
     line-height: 1.5;
@@ -126,7 +126,7 @@ nav a:hover {
 
 /* ✅ Post Date Styling */
 .card .post-date {
-    padding: 0 15px;
+    padding: 15px;
     color: #65676b;
     font-size: 0.85em;
 }
